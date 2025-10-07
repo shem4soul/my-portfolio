@@ -4,7 +4,6 @@ import type React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-
 import {
   Book,
   Database,
@@ -168,8 +167,9 @@ export default function Home() {
               </h1>
               <p className="text-xl text-muted-foreground">
                 Building secure, scalable, and high-performance web
-                applications. Specializing in Node.js, Express, React,
-                TypeScript, and database design (MongoDB / PostgreSQL).
+                applications. Specializing in HTML, CSS, JavaScript, TypeScript,
+                React, Next Js, Node js, Express, Nest Js, and database design
+                (MongoDB / PostgreSQL).
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -229,11 +229,11 @@ export default function Home() {
               <p className="leading-normal text-muted-foreground">
                 Full Stack Developer with hands-on experience building scalable
                 web applications across frontend and backend. Proficient in
-                Node.js, Express, React, and MongoDB with production experience
-                deploying containerized apps and integrating payment systems.
-                Passionate about writing maintainable code, optimizing
-                performance, and building products that solve real user
-                problems.
+                HTML, CSS, JavaScript, TypeScript, React, Next js, Node js, Nest
+                js, Express, and MongoDB with production experience deploying
+                containerized apps and integrating payment systems. Passionate
+                about writing maintainable code, optimizing performance, and
+                building products that solve real user problems.
               </p>
 
               <div className="mt-4">
@@ -243,7 +243,7 @@ export default function Home() {
                     <strong>Location:</strong> Lagos, Nigeria
                   </li>
                   <li>
-                    <strong>Experience:</strong> Full-Stack Web Development,
+                    <strong>Experience:</strong> Full-Stack Web Development: 
                     Backend & Frontend Integration, RESTful & GraphQL APIs
                   </li>
                   <li>
@@ -251,9 +251,8 @@ export default function Home() {
                     Benin
                   </li>
                   <li>
-                    <strong>Core Skills:</strong> TypeScript, React.js, Node.js,
-                    Express, Next.js, NestJS, MongoDB, PostgreSQL,
-                    Authentication & Authorization, Payment Gateway Integration
+                    <strong>Core Skills:</strong> HTML, CSS, JavaScript, TypeScript, React, Next js, Node.js,
+                    Express, NestJS, MongoDB, PostgreSQL, Authentication & Authorization, Payment Gateway Integration
                   </li>
                   <li>
                     <strong>Interests:</strong> Building scalable web
@@ -819,7 +818,6 @@ function ProjectCard({
     </Card>
   );
 }
-
 
 function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
