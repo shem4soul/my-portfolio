@@ -3,6 +3,8 @@
 import type React from "react";
 import Link from "next/link";
 import Image from "next/image";
+
+
 import {
   Book,
   Database,
@@ -414,7 +416,7 @@ export default function Home() {
                 technologies={["Node.js", "Express", "Cloudinary", "MongoDB"]}
                 githubUrl="https://github.com/shem4soul/Recipe-Sharing-Platform-Project-5"
                 demoUrl="https://recipe-sharing-platform.onrender.com"
-                  image="/images/recipe-platform.png" 
+                image="/images/recipe-platform.png"
                 icon={<Utensils className="h-10 w-10" />}
               />
               <ProjectCard
@@ -437,6 +439,7 @@ export default function Home() {
                   "qrcode",
                 ]}
                 githubUrl="https://github.com/shem4soul/QR-Movie-Generator"
+                image="/images/qr-movie-generator-api.png"
                 demoUrl="https://qr-movie-generator.onrender.com/api"
                 icon={<Terminal className="h-10 w-10" />}
               />
@@ -445,6 +448,7 @@ export default function Home() {
                 description="Full-featured backend API for managing products, orders, users, and payments in an e-commerce platform."
                 technologies={["Node.js", "Express", "MongoDB", "JWT"]}
                 githubUrl="https://github.com/shem4soul/Ecommerce-with-MongoDB"
+                image="/images/ecommerce-api.png"
                 demoUrl="https://ecommerce-hm9a.onrender.com"
                 icon={<Server className="h-10 w-10" />}
               />
@@ -453,6 +457,7 @@ export default function Home() {
                 description="Job search API with role-based access, job postings, and applicant tracking."
                 technologies={["Node.js", "Express", "MongoDB", "JWT"]}
                 githubUrl="https://github.com/shem4soul/Jobster"
+                image="/images/jobster-platform.png"
                 demoUrl="https://temp-jobster-api-2wgr.onrender.com"
                 icon={<Book className="h-10 w-10" />}
               />
@@ -461,6 +466,7 @@ export default function Home() {
                 description="Supermarket e-commerce API with user authentication, product management, and payment integration."
                 technologies={["Node.js", "Express", "MongoDB", "Paystack"]}
                 githubUrl="https://github.com/shem4soul/Freshmart-API-store"
+                image="/images/freshmart-api.png"
                 // demoUrl="" // Add live link if deployed
                 icon={<Database className="h-10 w-10" />}
               />
@@ -469,6 +475,7 @@ export default function Home() {
                 description="Web3-enabled learn-to-earn platform backend using Node.js and in-memory data store."
                 technologies={["Node.js", "Express", "Web3"]}
                 githubUrl="https://github.com/shem4soul/LearnChainProject"
+                image="/images/learnchain-project.png"
                 // demoUrl="" // Add live link if deployed
                 icon={<Book className="h-10 w-10" />}
               />
@@ -477,6 +484,7 @@ export default function Home() {
                 description="Task management API with user authentication, CRUD operations, and role-based access."
                 technologies={["Node.js", "Express", "MongoDB", "JWT"]}
                 githubUrl="https://github.com/shem4soul/Task-manger"
+                image="/images/task-manager-api.png"
                 // demoUrl="" // Add live link if deployed
                 icon={<FolderOpen className="h-10 w-10" />}
               />
@@ -485,6 +493,7 @@ export default function Home() {
                 description="Backend API for blogging platform with authentication, posts, and comments."
                 technologies={["Node.js", "Express", "MongoDB", "JWT"]}
                 githubUrl="https://github.com/shem4soul/Blog-API"
+                image="/images/blog-api.png"
                 // demoUrl="" // Add live link if deployed
                 icon={<Book className="h-10 w-10" />}
               />
@@ -493,6 +502,7 @@ export default function Home() {
                 description="Social media analytics and content automation platform integrating Facebook Analytics and FabricJS."
                 technologies={["Node.js", "React.js", "FabricJS", "FFMPEG"]}
                 githubUrl="https://github.com/shem4soul/Skystudio"
+                image="/images/skystudio.png"
                 // demoUrl=""
                 icon={<Server className="h-10 w-10" />}
               />
@@ -725,6 +735,7 @@ function ProjectCard({
   icon,
   githubUrl,
   websiteUrl,
+  image, // optional image prop
 }: {
   title: string;
   description: string;
@@ -732,18 +743,33 @@ function ProjectCard({
   icon: React.ReactNode;
   githubUrl?: string;
   websiteUrl?: string;
+  image?: string;
 }) {
   return (
     <Card className="flex flex-col h-full">
+      {/* Image section (only renders if image exists) */}
+      {image && (
+        <div className="relative h-48 w-full">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover rounded-t-lg"
+          />
+        </div>
+      )}
+
       <CardHeader>
         <div className="flex items-center gap-2">
           {icon}
           <CardTitle className="text-lg">{title}</CardTitle>
         </div>
       </CardHeader>
+
       <CardContent className="flex-1">
         <p className="text-muted-foreground text-left text-sm">{description}</p>
       </CardContent>
+
       <CardFooter className="flex flex-col gap-4 border-t pt-4">
         <div className="flex flex-wrap gap-2 w-full">
           {technologies.map((tech) => (
@@ -752,6 +778,7 @@ function ProjectCard({
             </Badge>
           ))}
         </div>
+
         <div className="flex gap-2 w-full">
           {githubUrl && (
             <Link
@@ -792,6 +819,7 @@ function ProjectCard({
     </Card>
   );
 }
+
 
 function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
