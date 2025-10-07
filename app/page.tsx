@@ -241,16 +241,22 @@ export default function Home() {
                     <strong>Location:</strong> Lagos, Nigeria
                   </li>
                   <li>
-                    <strong>Experience:</strong> Backend & Full Stack
-                    Development, API Integration, DevOps
+                    <strong>Experience:</strong> Full-Stack Web Development,
+                    Backend & Frontend Integration, RESTful & GraphQL APIs
                   </li>
                   <li>
                     <strong>Education:</strong> B.Sc. Finance – University of
                     Benin
                   </li>
                   <li>
-                    <strong>Interests:</strong> API Design, Payment Integration,
-                    Database Optimization
+                    <strong>Core Skills:</strong> TypeScript, React.js, Node.js,
+                    Express, Next.js, NestJS, MongoDB, PostgreSQL,
+                    Authentication & Authorization, Payment Gateway Integration
+                  </li>
+                  <li>
+                    <strong>Interests:</strong> Building scalable web
+                    applications, optimizing database performance, designing
+                    secure and maintainable APIs, cloud deployment
                   </li>
                 </ul>
               </div>
@@ -398,57 +404,97 @@ export default function Home() {
           <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center py-6">
             <h2 className="text-3xl font-bold">Featured Projects</h2>
             <p className="max-w-[85%] leading-normal text-muted-foreground">
-              Project highlights — full stack and backend systems I built or
-              contributed to.
+              Project highlights — full stack project I built or contributed to.
             </p>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-8 w-full">
               <ProjectCard
-                title="Fitness Tracker"
-                description="Full-stack fitness tracking app with user auth, workout history, and analytics dashboards. Built with React, Node.js and MongoDB."
-                technologies={["React", "Node.js", "MongoDB", "JWT"]}
-                githubUrl="https://github.com/shem4soul/fitness-tracker"
-                icon={<Book className="h-10 w-10" />}
-              />
-              <ProjectCard
-                title="Donation Platform"
-                description="Secure donations platform with Paystack/PayPal integrations, campaigns, and admin dashboards for campaign management."
-                technologies={[
-                  "Node.js",
-                  "Express",
-                  "PostgreSQL",
-                  "Payment Integration",
-                ]}
-                githubUrl="https://github.com/shem4soul/donation-platform"
-                icon={<Database className="h-10 w-10" />}
-              />
-              <ProjectCard
-                title="Food Delivery Platform"
-                description="End-to-end food delivery platform with restaurant listings, order flow, and real-time status updates."
-                technologies={["Next.js", "Node.js", "Redis", "WebSockets"]}
-                githubUrl="https://github.com/shem4soul/food-delivery"
-                icon={<Server className="h-10 w-10" />}
-              />
-              <ProjectCard
                 title="Recipe Sharing Platform"
                 description="Social recipe platform with image uploads, likes, and comments. Cloudinary used for media handling."
                 technologies={["Node.js", "Express", "Cloudinary", "MongoDB"]}
-                githubUrl="https://github.com/shem4soul/recipe-sharing"
+                githubUrl="https://github.com/shem4soul/Recipe-Sharing-Platform-Project-5"
+                demoUrl="https://recipe-sharing-platform.onrender.com"
+                  image="/images/recipe-platform.png" 
                 icon={<Utensils className="h-10 w-10" />}
               />
               <ProjectCard
-                title="Expense Tracker"
-                description="Personal finance app with secure authentication, transaction categorization, and monthly reports."
-                technologies={["Node.js", "Express", "PostgreSQL", "JWT"]}
-                githubUrl="https://github.com/shem4soul/expense-tracker"
+                title="Movie Recommendation App"
+                description="React-based app providing movie recommendations using external APIs, with a responsive and modern interface."
+                technologies={["React", "Axios", "Tailwind CSS", "Material UI"]}
+                githubUrl="https://github.com/shem4soul/recommendation-movie-app"
+                image="/images/movie-app-home.png"
+                // demoUrl="" // Add live link if deployed
+                icon={<Globe className="h-10 w-10" />}
+              />
+              <ProjectCard
+                title="QR Movie Generator API"
+                description="NestJS and TypeScript backend generating QR codes for batches of movies, with PostgreSQL and Prisma integration."
+                technologies={[
+                  "NestJS",
+                  "TypeScript",
+                  "PostgreSQL",
+                  "Prisma",
+                  "qrcode",
+                ]}
+                githubUrl="https://github.com/shem4soul/QR-Movie-Generator"
+                demoUrl="https://qr-movie-generator.onrender.com/api"
+                icon={<Terminal className="h-10 w-10" />}
+              />
+              <ProjectCard
+                title="E-commerce API"
+                description="Full-featured backend API for managing products, orders, users, and payments in an e-commerce platform."
+                technologies={["Node.js", "Express", "MongoDB", "JWT"]}
+                githubUrl="https://github.com/shem4soul/Ecommerce-with-MongoDB"
+                demoUrl="https://ecommerce-hm9a.onrender.com"
+                icon={<Server className="h-10 w-10" />}
+              />
+              <ProjectCard
+                title="Jobster Platform"
+                description="Job search API with role-based access, job postings, and applicant tracking."
+                technologies={["Node.js", "Express", "MongoDB", "JWT"]}
+                githubUrl="https://github.com/shem4soul/Jobster"
+                demoUrl="https://temp-jobster-api-2wgr.onrender.com"
+                icon={<Book className="h-10 w-10" />}
+              />
+              <ProjectCard
+                title="Freshmart API"
+                description="Supermarket e-commerce API with user authentication, product management, and payment integration."
+                technologies={["Node.js", "Express", "MongoDB", "Paystack"]}
+                githubUrl="https://github.com/shem4soul/Freshmart-API-store"
+                // demoUrl="" // Add live link if deployed
+                icon={<Database className="h-10 w-10" />}
+              />
+              <ProjectCard
+                title="LearnChain Project"
+                description="Web3-enabled learn-to-earn platform backend using Node.js and in-memory data store."
+                technologies={["Node.js", "Express", "Web3"]}
+                githubUrl="https://github.com/shem4soul/LearnChainProject"
+                // demoUrl="" // Add live link if deployed
+                icon={<Book className="h-10 w-10" />}
+              />
+              <ProjectCard
+                title="Task Manager API"
+                description="Task management API with user authentication, CRUD operations, and role-based access."
+                technologies={["Node.js", "Express", "MongoDB", "JWT"]}
+                githubUrl="https://github.com/shem4soul/Task-manger"
+                // demoUrl="" // Add live link if deployed
                 icon={<FolderOpen className="h-10 w-10" />}
               />
               <ProjectCard
-                title="Online Quiz Platform"
-                description="Interactive quiz platform with timed quizzes, scoring, and leaderboards for education and assessments."
-                technologies={["React", "Node.js", "Socket.IO", "MongoDB"]}
-                githubUrl="https://github.com/shem4soul/quiz-platform"
+                title="Blog API"
+                description="Backend API for blogging platform with authentication, posts, and comments."
+                technologies={["Node.js", "Express", "MongoDB", "JWT"]}
+                githubUrl="https://github.com/shem4soul/Blog-API"
+                // demoUrl="" // Add live link if deployed
                 icon={<Book className="h-10 w-10" />}
+              />
+              <ProjectCard
+                title="Skystudio"
+                description="Social media analytics and content automation platform integrating Facebook Analytics and FabricJS."
+                technologies={["Node.js", "React.js", "FabricJS", "FFMPEG"]}
+                githubUrl="https://github.com/shem4soul/Skystudio"
+                // demoUrl=""
+                icon={<Server className="h-10 w-10" />}
               />
             </div>
 
@@ -474,8 +520,7 @@ export default function Home() {
           <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4">
             <h2 className="text-3xl font-bold">Work Experience</h2>
             <p className="max-w-[85%] leading-normal text-muted-foreground">
-              My professional journey and roles in software and backend
-              development.
+              My professional journey and roles in software development.
             </p>
 
             <div className="w-full space-y-6 mt-8">
