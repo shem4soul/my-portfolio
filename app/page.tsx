@@ -163,17 +163,16 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1 space-y-4">
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-                Full Stack Developer
+                Backend Developer
               </h1>
               <p className="text-xl text-muted-foreground">
-                Building secure, scalable, and high-performance web
-                applications. Specializing in HTML, CSS, JavaScript, TypeScript,
-                React, Next Js, Node js, Express, Nest Js, and database design
-                (MongoDB / PostgreSQL).
+                Building secure, scalable, and high-performance backend systems.
+                Specializing in Node.js, Express, NestJS, TypeScript,
+                PostgreSQL, MongoDB, API design, authentication, and cloud
+                deployment.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                {/* Direct CV download (opens new tab) */}
                 <a
                   href="/Emmanuel-Seun-SHITTU-F.S.pdf"
                   target="_blank"
@@ -218,6 +217,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         {/* About + Tech Stack */}
         <section
           id="about"
@@ -227,13 +227,14 @@ export default function Home() {
             <div className="space-y-6 text-justify">
               <h2 className="text-3xl font-bold leading-[1.1]">About Me</h2>
               <p className="leading-normal text-muted-foreground">
-                Full Stack Developer with hands-on experience building scalable
-                web applications across frontend and backend. Proficient in
-                HTML, CSS, JavaScript, TypeScript, React, Next js, Node js, Nest
-                js, Express, and MongoDB with production experience deploying
-                containerized apps and integrating payment systems. Passionate
-                about writing maintainable code, optimizing performance, and
-                building products that solve real user problems.
+                Backend Developer with hands-on experience designing and
+                building scalable, secure backend systems using Node.js,
+                Express, NestJS, and TypeScript. Skilled in API design,
+                authentication/authorization (JWT, OAuth2), database modeling
+                (PostgreSQL, MongoDB), caching (Redis), and deploying
+                containerized applications on cloud platforms. Passionate about
+                writing maintainable code, optimizing performance, and solving
+                real-world problems through backend solutions.
               </p>
 
               <div className="mt-4">
@@ -243,21 +244,23 @@ export default function Home() {
                     <strong>Location:</strong> Lagos, Nigeria
                   </li>
                   <li>
-                    <strong>Experience:</strong> Full-Stack Web Development: 
-                    Backend & Frontend Integration, RESTful & GraphQL APIs
+                    <strong>Experience:</strong> Backend Development: RESTful &
+                    GraphQL APIs, Authentication, Microservices, Cloud
+                    Deployment
                   </li>
                   <li>
                     <strong>Education:</strong> B.Sc. Finance – University of
                     Benin
                   </li>
                   <li>
-                    <strong>Core Skills:</strong> HTML, CSS, JavaScript, TypeScript, React, Next js, Node.js,
-                    Express, NestJS, MongoDB, PostgreSQL, Authentication & Authorization, Payment Gateway Integration
+                    <strong>Core Skills:</strong> Node.js, Express, NestJS,
+                    TypeScript, PostgreSQL, MongoDB, Redis, Docker, AWS, JWT,
+                    OAuth2, CI/CD, Jest, Supertest
                   </li>
                   <li>
-                    <strong>Interests:</strong> Building scalable web
-                    applications, optimizing database performance, designing
-                    secure and maintainable APIs, cloud deployment
+                    <strong>Interests:</strong> Designing secure APIs,
+                    optimizing backend performance, building scalable systems,
+                    cloud infrastructure
                   </li>
                 </ul>
               </div>
@@ -272,8 +275,7 @@ export default function Home() {
                   {[
                     "Node.js",
                     "Express",
-                    "React",
-                    "Next.js",
+                    "NestJS",
                     "TypeScript",
                     "JavaScript",
                     "MongoDB",
@@ -282,6 +284,7 @@ export default function Home() {
                     "Docker",
                     "AWS",
                     "Jest",
+                    "Supertest",
                   ].map((tech) => (
                     <Badge
                       key={tech}
@@ -294,20 +297,21 @@ export default function Home() {
                 </div>
                 <p className="text-sm text-muted-foreground mt-3">
                   Experienced in designing RESTful APIs, authentication
-                  (JWT/OAuth), payment gateways (Paystack/Stripe), caching, and
-                  CI/CD pipelines.
+                  (JWT/OAuth2), caching, microservices, CI/CD pipelines, and
+                  cloud deployment.
                 </p>
               </CardContent>
             </Card>
           </div>
         </section>
+
         {/* Skills */}
         <section id="skills" className="container py-12">
           <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
             <h2 className="text-3xl font-bold">Technical Skills</h2>
             <p className="max-w-[85%] leading-normal text-muted-foreground">
-              My technical expertise spans backend and frontend tooling,
-              databases, and cloud/deployment tools.
+              My technical expertise spans backend development, database design,
+              and cloud deployment tools.
             </p>
 
             <Tabs defaultValue="languages" className="w-full max-w-3xl mt-8">
@@ -320,14 +324,7 @@ export default function Home() {
 
               <TabsContent value="languages" className="mt-4">
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                  {[
-                    "JavaScript",
-                    "TypeScript",
-                    "C# (familiar)",
-                    "HTML/CSS",
-                    "SQL",
-                    "Bash",
-                  ].map((skill) => (
+                  {["JavaScript", "TypeScript", "SQL", "Bash"].map((skill) => (
                     <Badge
                       key={skill}
                       variant="outline"
@@ -341,22 +338,17 @@ export default function Home() {
 
               <TabsContent value="frameworks" className="mt-4">
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                  {[
-                    "Node.js",
-                    "Express",
-                    "Next.js",
-                    "React",
-                    "NestJS",
-                    ".NET Core",
-                  ].map((skill) => (
-                    <Badge
-                      key={skill}
-                      variant="outline"
-                      className="py-3 text-center justify-center"
-                    >
-                      {skill}
-                    </Badge>
-                  ))}
+                  {["Node.js", "Express", "NestJS", ".NET Core"].map(
+                    (skill) => (
+                      <Badge
+                        key={skill}
+                        variant="outline"
+                        className="py-3 text-center justify-center"
+                      >
+                        {skill}
+                      </Badge>
+                    )
+                  )}
                 </div>
               </TabsContent>
 
@@ -400,32 +392,24 @@ export default function Home() {
             </Tabs>
           </div>
         </section>
+
         {/* Projects */}
         <section id="projects" className="container py-12 bg-secondary/50">
           <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center py-6">
             <h2 className="text-3xl font-bold">Featured Projects</h2>
             <p className="max-w-[85%] leading-normal text-muted-foreground">
-              Project highlights — full stack project I built or contributed to.
+              Project highlights — backend projects I built or contributed to.
             </p>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-8 w-full">
               <ProjectCard
                 title="Recipe Sharing Platform"
-                description="Social recipe platform with image uploads, likes, and comments. Cloudinary used for media handling."
+                description="Social recipe platform backend with image uploads, likes, and comments. Cloudinary used for media handling."
                 technologies={["Node.js", "Express", "Cloudinary", "MongoDB"]}
                 githubUrl="https://github.com/shem4soul/Recipe-Sharing-Platform-Project-5"
                 demoUrl="https://recipe-sharing-platform.onrender.com"
                 image="/images/recipe-platform.png"
                 icon={<Utensils className="h-10 w-10" />}
-              />
-              <ProjectCard
-                title="Movie Recommendation App"
-                description="React-based app providing movie recommendations using external APIs, with a responsive and modern interface."
-                technologies={["React", "Axios", "Tailwind CSS", "Material UI"]}
-                githubUrl="https://github.com/shem4soul/recommendation-movie-app"
-                image="/images/movie-app-home.png"
-                // demoUrl="" // Add live link if deployed
-                icon={<Globe className="h-10 w-10" />}
               />
               <ProjectCard
                 title="QR Movie Generator API"
@@ -438,17 +422,17 @@ export default function Home() {
                   "qrcode",
                 ]}
                 githubUrl="https://github.com/shem4soul/QR-Movie-Generator"
-                image="/images/qr-movie-generator-api.png"
                 demoUrl="https://qr-movie-generator.onrender.com/api"
+                image="/images/qr-movie-generator-api.png"
                 icon={<Terminal className="h-10 w-10" />}
               />
               <ProjectCard
                 title="E-commerce API"
-                description="Full-featured backend API for managing products, orders, users, and payments in an e-commerce platform."
+                description="Full-featured backend API for managing products, orders, users, and payments."
                 technologies={["Node.js", "Express", "MongoDB", "JWT"]}
                 githubUrl="https://github.com/shem4soul/Ecommerce-with-MongoDB"
-                image="/images/ecommerce-api.png"
                 demoUrl="https://ecommerce-hm9a.onrender.com"
+                image="/images/ecommerce-api.png"
                 icon={<Server className="h-10 w-10" />}
               />
               <ProjectCard
@@ -456,8 +440,8 @@ export default function Home() {
                 description="Job search API with role-based access, job postings, and applicant tracking."
                 technologies={["Node.js", "Express", "MongoDB", "JWT"]}
                 githubUrl="https://github.com/shem4soul/Jobster"
-                image="/images/jobster-platform.png"
                 demoUrl="https://temp-jobster-api-2wgr.onrender.com"
+                image="/images/jobster-platform.png"
                 icon={<Book className="h-10 w-10" />}
               />
               <ProjectCard
@@ -466,7 +450,6 @@ export default function Home() {
                 technologies={["Node.js", "Express", "MongoDB", "Paystack"]}
                 githubUrl="https://github.com/shem4soul/Freshmart-API-store"
                 image="/images/freshmart-api.png"
-                // demoUrl="" // Add live link if deployed
                 icon={<Database className="h-10 w-10" />}
               />
               <ProjectCard
@@ -475,7 +458,6 @@ export default function Home() {
                 technologies={["Node.js", "Express", "Web3"]}
                 githubUrl="https://github.com/shem4soul/LearnChainProject"
                 image="/images/learnchain-project.png"
-                // demoUrl="" // Add live link if deployed
                 icon={<Book className="h-10 w-10" />}
               />
               <ProjectCard
@@ -484,7 +466,6 @@ export default function Home() {
                 technologies={["Node.js", "Express", "MongoDB", "JWT"]}
                 githubUrl="https://github.com/shem4soul/Task-manger"
                 image="/images/task-manager-api.png"
-                // demoUrl="" // Add live link if deployed
                 icon={<FolderOpen className="h-10 w-10" />}
               />
               <ProjectCard
@@ -493,16 +474,14 @@ export default function Home() {
                 technologies={["Node.js", "Express", "MongoDB", "JWT"]}
                 githubUrl="https://github.com/shem4soul/Blog-API"
                 image="/images/blog-api.png"
-                // demoUrl="" // Add live link if deployed
                 icon={<Book className="h-10 w-10" />}
               />
               <ProjectCard
                 title="Skystudio"
-                description="Social media analytics and content automation platform integrating Facebook Analytics and FabricJS."
-                technologies={["Node.js", "React.js", "FabricJS", "FFMPEG"]}
+                description="Social media analytics and content automation backend integrating Facebook Analytics and FabricJS."
+                technologies={["Node.js", "FabricJS", "FFMPEG"]}
                 githubUrl="https://github.com/shem4soul/Skystudio"
                 image="/images/skystudio.png"
-                // demoUrl=""
                 icon={<Server className="h-10 w-10" />}
               />
             </div>
@@ -524,12 +503,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        Experience
+
+        {/* Experience */}
         <section id="experience" className="container py-12">
           <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4">
             <h2 className="text-3xl font-bold">Work Experience</h2>
             <p className="max-w-[85%] leading-normal text-muted-foreground">
-              My professional journey and roles in software development.
+              My professional journey and roles in backend development.
             </p>
 
             <div className="w-full space-y-6 mt-8">
@@ -570,39 +550,16 @@ export default function Home() {
               />
 
               <ExperienceItem
-                title="Full Stack Developer (Bootcamp Trainee/Intern)"
-                company="EdoJobs Tech Bootcamp – Full Stack Development Track"
-                period="Jan 2023 – Dec 2023"
-                description="Completed a full-year intensive EdoJobs Full Stack Bootcamp and Internship, gaining hands-on experience designing and developing 7+ end-to-end web applications. Built responsive UIs with React.js, implemented scalable RESTful APIs with Node.js and Express, and integrated MongoDB for data management. Collaborated in agile teams to translate Figma designs into functional products and deployed full-stack projects to Netlify and Vercel."
-                technologies={[
-                  "React.js",
-                  "Node.js",
-                  "Express",
-                  "MongoDB",
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                ]}
-              />
-
-              <ExperienceItem
-                title="Full Stack Developer (Intern)"
+                title="Backend Developer (Intern)"
                 company="In-box Elite"
                 period="Aug 2023 – Dec 2024"
-                description="Built end-to-end merchandising and inventory management systems; developed dashboards and optimized backend queries."
-                technologies={["React", "Node.js", "MongoDB"]}
-              />
-
-              <ExperienceItem
-                title="Frontend Developer (Contract)"
-                company="GlowUp Beauty"
-                period="Mar 2023 – Jul 2023"
-                description="Developed responsive e-commerce pages, product galleries and optimized site performance for a beauty brand."
-                technologies={["React", "Tailwind CSS", "Netlify"]}
+                description="Built backend services for merchandising and inventory management; designed efficient models, optimized queries, and integrated secure authentication."
+                technologies={["Node.js", "Express", "MongoDB"]}
               />
             </div>
           </div>
         </section>
+
         {/* Contact */}
         <section id="contact" className="container py-12">
           <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
