@@ -131,15 +131,22 @@ Available upon request.`;
             className="space-y-8 text-gray-300"
           >
             {/* Profile */}
+            {/* Profile Section */}
             <section>
               <div className="flex items-center gap-2 mb-2 text-white font-semibold">
                 <FileText className="h-5 w-5 text-blue-400" /> Profile
               </div>
               <p>
-                Full Stack Developer experienced in building secure, scalable,
-                and high-performing web applications. Skilled in Node.js,
-                Express, React, MongoDB, and Docker, with expertise in API
-                design and cloud deployments.
+                Backend Developer with strong experience designing, building,
+                testing, and deploying scalable and secure backend systems using
+                Node.js, Express.js, TypeScript, and NestJS. Skilled in
+                developing RESTful and microservices-based APIs, implementing
+                authentication and authorization (JWT, RBAC, OAuth2), and
+                optimizing performance across MongoDB, MySQL, and PostgreSQL.
+                Experienced in unit and integration testing (Jest, Supertest)
+                and integrating automated tests into CI/CD pipelines (GitHub
+                Actions). Passionate about clean architecture, modular backend
+                design, and building systems that scale.
               </p>
             </section>
 
@@ -150,28 +157,38 @@ Available upon request.`;
               </div>
               <ul className="list-disc ml-6 space-y-1">
                 <li>
-                  <strong>Backend:</strong> Node.js, Express, NestJS,
-                  TypeScript, JavaScript
+                  <strong>Backend & Architecture:</strong> Node.js, Express.js,
+                  NestJS, TypeScript, JavaScript, RESTful & Microservices
+                  Architecture, MVC & Modular Architecture, Event-Driven &
+                  Asynchronous Processing
                 </li>
                 <li>
-                  <strong>Frontend:</strong> React.js, Next.js, Tailwind CSS,
-                  Redux
+                  <strong>Databases & Caching:</strong> MongoDB (Mongoose),
+                  MySQL & PostgreSQL (Sequelize), Redis, Query Optimization &
+                  Indexing, Transactions & Data Modeling
                 </li>
                 <li>
-                  <strong>Databases:</strong> MongoDB, PostgreSQL, Redis
+                  <strong>DevOps & CI/CD:</strong> Git & GitHub, GitHub Actions,
+                  Docker, PM2, AWS, Render, Heroku, Deployment Automation &
+                  Monitoring
                 </li>
                 <li>
-                  <strong>Cloud & DevOps:</strong> AWS, Docker, Kubernetes,
-                  Heroku, Render
+                  <strong>Security & Authentication:</strong> JWT, RBAC, OAuth2,
+                  Rate Limiting, Secure API Design & Input Validation
                 </li>
                 <li>
-                  <strong>Security & Testing:</strong> JWT, OAuth2, RBAC, Jest,
-                  Postman, TDD
+                  <strong>Testing & QA:</strong> Jest, Supertest, Mocha & Chai,
+                  Mocking & Spies, Regression Testing, Test Automation in CI/CD
+                  Pipelines
+                </li>
+                <li>
+                  <strong>Documentation & Tools:</strong> Swagger (OpenAPI),
+                  Postman, Insomnia, Agile/Scrum
                 </li>
               </ul>
             </section>
 
-            {/* Experience */}
+            {/* Professional Experience */}
             <section>
               <div className="flex items-center gap-2 mb-2 text-white font-semibold">
                 <Briefcase className="h-5 w-5 text-blue-400" /> Professional
@@ -180,31 +197,137 @@ Available upon request.`;
               <ul className="list-disc ml-6 space-y-2">
                 <li>
                   <strong>Backend Developer</strong> — Divnerix Innovations (Jan
-                  2025 – Present)
+                  2025 – Present, Remote, Nigeria)
+                  <ul className="list-disc ml-6">
+                    <li>
+                      Designed and implemented scalable backend architectures
+                      using Node.js, Express, Sequelize, MongoDB
+                    </li>
+                    <li>
+                      Built secure RESTful APIs for authentication, payments,
+                      donations, events, and content management
+                    </li>
+                    <li>
+                      Implemented JWT, RBAC, and request validation to
+                      strengthen security
+                    </li>
+                    <li>
+                      Optimized API performance with query optimization, Redis
+                      caching, and async processing (up to 40% faster)
+                    </li>
+                    <li>
+                      Wrote unit & integration tests using Jest & Supertest
+                    </li>
+                    <li>
+                      Integrated CI/CD pipelines with GitHub Actions and
+                      deployed to AWS & Heroku
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <strong>Volunteer Backend Developer</strong> — ScholarGuide &
-                  Ed3Hub (2024 – Present)
+                  <strong>Backend Developer (Volunteer)</strong> — ScholarGuide
+                  (Feb 2025 – Oct 2025, Remote, Nigeria)
+                  <ul className="list-disc ml-6">
+                    <li>
+                      Developing scalable backend APIs with Node.js, Express,
+                      and MongoDB (Mongoose)
+                    </li>
+                    <li>
+                      Implementing CRUD operations for courses, user profiles,
+                      and gamification modules (points, badges, leaderboards)
+                    </li>
+                    <li>
+                      Integrating JWT authentication and role-based access for
+                      Admin, Teacher, Parent, and Student users
+                    </li>
+                    <li>
+                      Applying caching and rate limiting to enhance API
+                      performance and reliability
+                    </li>
+                    <li>
+                      Documented APIs with Swagger, improving team collaboration
+                      and onboarding efficiency
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <strong>Full Stack Developer</strong> — Groovinx / SkyeStudio
-                  Project (Oct 2024 – Dec 2024)
-                </li>
-                <li>
-                  <strong>Full Stack Developer (Intern)</strong> — In-box Elite
-                  (Aug 2023 – Dec 2024)
-                </li>
-                <li>
-                  <strong>Frontend Developer (Contract)</strong> — GlowUp Beauty
-                  (Mar 2023 – Jul 2025)
+                  <strong>Backend Developer (Volunteer)</strong> — Ed3Hub (Dec
+                  2024 – Aug 2025, Remote, Nigeria)
+                  <ul className="list-disc ml-6">
+                    <li>
+                      Developing a polyglot backend architecture using
+                      PostgreSQL, MySQL, and MongoDB
+                    </li>
+                    <li>
+                      Building backend APIs with Node.js, Express, and Sequelize
+                      ORM for seamless SQL/NoSQL integration
+                    </li>
+                    <li>
+                      Integrating Redis for caching and Elasticsearch for search
+                      and recommendation features
+                    </li>
+                    <li>
+                      Implementing NFT certification endpoints and token-based
+                      gamification
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <strong>Backend Development Intern</strong> — CareerEx (Jun
-                  2024 – Dec 2024)
+                  2024 – Dec 2024, Remote)
+                  <ul className="list-disc ml-6">
+                    <li>
+                      Developed REST APIs for fintech and e-commerce projects
+                    </li>
+                    <li>
+                      Integrated Paystack & PayPal payment gateways with
+                      multi-currency support
+                    </li>
+                    <li>
+                      Implemented error handling and validation, reducing bugs
+                      by 40%
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <strong>Full Stack Developer (Trainee)</strong> — EdoJobs Tech
-                  Bootcamp (Jan 2023 – Dec 2023)
+                  <strong>Backend Developer Intern</strong> — In-box Elite (Aug
+                  2023 – Dec 2024)
+                  <ul className="list-disc ml-6">
+                    <li>
+                      Developed and maintained backend services using Node.js,
+                      Express, Sequelize (MySQL)
+                    </li>
+                    <li>
+                      Implemented authentication, input validation, and
+                      structured error-handling middleware
+                    </li>
+                    <li>
+                      Optimized database queries, improving API response time by
+                      30%
+                    </li>
+                    <li>
+                      Automated order & stock tracking workflows, reducing
+                      manual processes by 40%
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Backend Developer (Contract)</strong> — Groovinx /
+                  SkyeStudio Project (Oct 2024 – Dec 2024, Remote)
+                  <ul className="list-disc ml-6">
+                    <li>
+                      Developed backend services for content scheduling, media
+                      rendering, and analytics processing
+                    </li>
+                    <li>
+                      Integrated Facebook Graph API, FabricJS, and FFMPEG for
+                      automated content generation
+                    </li>
+                    <li>
+                      Optimized backend performance, reduced latency, and
+                      improved system responsiveness
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </section>
