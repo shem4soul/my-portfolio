@@ -73,7 +73,7 @@ export default function Home() {
   // WhatsApp message & number
   const whatsappNumber = "2347036613047";
   const whatsappMessage = encodeURIComponent(
-    "Hi Emmanuel! I saw your portfolio and would like to connect about a project/opportunity."
+    "Hi Emmanuel! I saw your portfolio and would like to connect about a project/opportunity.",
   );
   const whatsappHref = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -227,14 +227,17 @@ export default function Home() {
             <div className="space-y-6 text-justify">
               <h2 className="text-3xl font-bold leading-[1.1]">About Me</h2>
               <p className="leading-normal text-muted-foreground">
-                Backend Developer with hands-on experience designing and
-                building scalable, secure backend systems using Node.js,
-                Express, NestJS, and TypeScript. Skilled in API design,
-                authentication/authorization (JWT, OAuth2), database modeling
-                (PostgreSQL, MongoDB), caching (Redis), and deploying
-                containerized applications on cloud platforms. Passionate about
-                writing maintainable code, optimizing performance, and solving
-                real-world problems through backend solutions.
+                Backend Developer with strong experience designing, building,
+                testing, and deploying scalable and secure backendsystems using
+                Node.js, Express.js, TypeScript, and NestJS . Skilled in
+                developing RESTful and microservices-basedAPIs , implementing
+                authentication and authorization (JWT, RBAC, OAuth2) , and
+                optimizing performance across MongoDB, MySQL, and PostgreSQL .
+                Experienced in unit and integration testing (Jest, Supertest)
+                and integrating automated tests into CI/CD pipelines(GitHub
+                Actions) to ensure reliable, production-ready deployments.
+                Passionate about clean architecture, modularbackend design, and
+                building systems that scale.
               </p>
 
               <div className="mt-4">
@@ -347,7 +350,7 @@ export default function Home() {
                       >
                         {skill}
                       </Badge>
-                    )
+                    ),
                   )}
                 </div>
               </TabsContent>
@@ -363,7 +366,7 @@ export default function Home() {
                       >
                         {skill}
                       </Badge>
-                    )
+                    ),
                   )}
                 </div>
               </TabsContent>
@@ -530,7 +533,7 @@ export default function Home() {
               <ExperienceItem
                 title="Backend Developer (Volunteer)"
                 company="ScholarGuide – EdTech Startup"
-                period="Jan 2025 – Present"
+                period="Feb 2025 – Oct 2025"
                 description="Developed backend services for gamified learning; implemented role-based access control, caching, and secure endpoints for points, badges, and leaderboards."
                 technologies={["Node.js", "MongoDB", "Redis", "JWT", "Express"]}
               />
@@ -538,7 +541,7 @@ export default function Home() {
               <ExperienceItem
                 title="Backend Developer (Volunteer)"
                 company="MyEd3Hub – Web3 Learning Platform"
-                period="Dec 2024 – Present"
+                period="Dec 2024 – August 2025"
                 description="Built NFT-backed certification APIs and blockchain-linked learning analytics; used Redis caching and Elasticsearch to improve query performance by 75%."
                 technologies={[
                   "Node.js",
@@ -550,11 +553,43 @@ export default function Home() {
               />
 
               <ExperienceItem
-                title="Backend Developer (Intern)"
-                company="In-box Elite"
-                period="Aug 2023 – Dec 2024"
+                title="Backend Developer (Contract)"
+                company="Groovinx / SkyeStudio – Social Media Analytics & Content Automation Platform"
+                period="Oct 2024 – Dec 2024"
+                description="Developed backend services for content scheduling, video processing, and analytics pipelines; optimized data flow to improve performance and reduce request latency."
+                technologies={[
+                  "Node.js",
+                  "Express",
+                  "MongoDB",
+                  "FFMPEG",
+                  "Facebook Graph API",
+                  "FabricJS",
+                ]}
+              />
+
+              <ExperienceItem
+                title="Backend Developer "
+                company="In-Box Elite"
+                period="Feb 2023 – Dec 2023"
                 description="Built backend services for merchandising and inventory management; designed efficient models, optimized queries, and integrated secure authentication."
                 technologies={["Node.js", "Express", "MongoDB"]}
+              />
+              <ExperienceItem
+                title="Full Stack Developer (Bootcamp Trainee / Intern)"
+                company="EdoJobs Tech Bootcamp – Full Stack Development Track"
+                period="Mar 2022 – Dec 2022"
+                description="Built responsive web interfaces and full-stack applications; developed RESTful APIs, integrated frontend and backend services, and collaborated on real-world project clones."
+                technologies={[
+                  "React.js",
+                  "JavaScript",
+                  "HTML",
+                  "CSS",
+                  "Node.js",
+                  "Express",
+                  "MongoDB",
+                  "Netlify",
+                  "Vercel",
+                ]}
               />
             </div>
           </div>
@@ -786,9 +821,9 @@ function ContactForm() {
     const message = formData.get("message");
 
     const mailtoLink = `mailto:shem4soul@gmail.com?subject=${encodeURIComponent(
-      subject as string
+      subject as string,
     )}&body=${encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     )}`;
     window.location.href = mailtoLink;
   };
