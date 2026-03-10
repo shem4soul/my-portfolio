@@ -404,7 +404,7 @@ export default function Home() {
               Project highlights — backend projects I built or contributed to.
             </p>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-8 w-full">
+            {/* <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-8 w-full">
               <ProjectCard
                 title="Recipe Sharing Platform"
                 description="Social recipe platform backend with image uploads, likes, and comments. Cloudinary used for media handling."
@@ -479,6 +479,123 @@ export default function Home() {
                 image="/images/blog-api.png"
                 icon={<Book className="h-10 w-10" />}
               />
+              <ProjectCard
+                title="Skystudio"
+                description="Social media analytics and content automation backend integrating Facebook Analytics and FabricJS."
+                technologies={["Node.js", "FabricJS", "FFMPEG"]}
+                githubUrl="https://github.com/shem4soul/Skystudio"
+                image="/images/skystudio.png"
+                icon={<Server className="h-10 w-10" />}
+              />
+            </div> */}
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-8 w-full">
+              {/* Top 3 Featured Projects */}
+
+              <ProjectCard
+                title="Banking API"
+                description="NestJS and TypeScript backend for wallet management, fund transfers, and VISA-like card generation with multi-currency support."
+                technologies={[
+                  "NestJS",
+                  "TypeScript",
+                  "PostgreSQL",
+                  "Docker",
+                  "CQRS",
+                ]}
+                githubUrl="https://github.com/shem4soul/Banking-API"
+                image="/images/banking-api.png"
+                icon={<Server className="h-10 w-10" />}
+              />
+
+              <ProjectCard
+                title="Monnify Payroll System"
+                description="Automated payroll system integrated with Monnify for employee payouts, payroll items management, and secure salary processing."
+                technologies={[
+                  "TypeScript",
+                  "PostgreSQL",
+                  "Docker",
+                  "Redis",
+                  "Monnify API",
+                ]}
+                githubUrl="https://github.com/shem4soul/Monnify-Payroll-System"
+                image="/images/monnify-payroll.png"
+                icon={<Server className="h-10 w-10" />}
+              />
+
+              <ProjectCard
+                title="School Management System API"
+                description="Comprehensive Node.js backend for managing students, teachers, exams, academic years, and school programs."
+                technologies={["Node.js", "Express", "MongoDB", "JWT"]}
+                githubUrl="https://github.com/shem4soul/school-management-system-API"
+                image="/images/school-management-api.png"
+                icon={<Book className="h-10 w-10" />}
+              />
+
+              {/* Other Projects */}
+
+              <ProjectCard
+                title="Recipe Sharing Platform"
+                description="Social recipe platform backend with image uploads, likes, and comments. Cloudinary used for media handling."
+                technologies={["Node.js", "Express", "Cloudinary", "MongoDB"]}
+                githubUrl="https://github.com/shem4soul/Recipe-Sharing-Platform-Project-5"
+                demoUrl="https://recipe-sharing-platform.onrender.com"
+                image="/images/recipe-platform.png"
+                icon={<Utensils className="h-10 w-10" />}
+              />
+
+              <ProjectCard
+                title="QR Movie Generator API"
+                description="NestJS backend generating QR codes for batches of movies with PostgreSQL and Prisma."
+                technologies={[
+                  "NestJS",
+                  "TypeScript",
+                  "PostgreSQL",
+                  "Prisma",
+                  "QRCode",
+                ]}
+                githubUrl="https://github.com/shem4soul/QR-Movie-Generator"
+                demoUrl="https://qr-movie-generator.onrender.com/api"
+                image="/images/qr-movie-generator-api.png"
+                icon={<Terminal className="h-10 w-10" />}
+              />
+
+              <ProjectCard
+                title="E-commerce API"
+                description="Full-featured backend API for managing products, orders, users, and payments."
+                technologies={["Node.js", "Express", "MongoDB", "JWT"]}
+                githubUrl="https://github.com/shem4soul/Ecommerce-with-MongoDB"
+                demoUrl="https://ecommerce-hm9a.onrender.com"
+                image="/images/ecommerce-api.png"
+                icon={<Server className="h-10 w-10" />}
+              />
+
+              <ProjectCard
+                title="Jobster Platform"
+                description="Job search API with role-based access, job postings, and applicant tracking."
+                technologies={["Node.js", "Express", "MongoDB", "JWT"]}
+                githubUrl="https://github.com/shem4soul/Jobster"
+                demoUrl="https://temp-jobster-api-2wgr.onrender.com"
+                image="/images/jobster-platform.png"
+                icon={<Book className="h-10 w-10" />}
+              />
+
+              <ProjectCard
+                title="Task Manager API"
+                description="Task management API with user authentication, CRUD operations, and role-based access."
+                technologies={["Node.js", "Express", "MongoDB", "JWT"]}
+                githubUrl="https://github.com/shem4soul/Task-manger"
+                image="/images/task-manager-api.png"
+                icon={<FolderOpen className="h-10 w-10" />}
+              />
+
+              <ProjectCard
+                title="Blog API"
+                description="Backend API for blogging platform with authentication, posts, and comments."
+                technologies={["Node.js", "Express", "MongoDB", "JWT"]}
+                githubUrl="https://github.com/shem4soul/Blog-API"
+                image="/images/blog-api.png"
+                icon={<Book className="h-10 w-10" />}
+              />
+
               <ProjectCard
                 title="Skystudio"
                 description="Social media analytics and content automation backend integrating Facebook Analytics and FabricJS."
