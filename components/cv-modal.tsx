@@ -26,7 +26,7 @@ export function CVModal() {
 
   const downloadCV = () => {
     const cvContent = `EMMANUEL SEUN SHITTU
-Full Stack Developer
+Backend Engineer
 11, Ila Oragun Street, Ketu, Lagos State, Nigeria
 +2347036613047
 shem4soul@gmail.com
@@ -34,18 +34,16 @@ linkedin.com/in/emmanuel-shittu-91573915a
 github.com/shem4soul
 
 PROFILE
-Full Stack Developer with hands-on experience building scalable web applications across both frontend and backend. 
-Proficient in Node.js, Express, React.js, and MongoDB, with strong expertise in API design, UI integration, and cloud deployments (AWS, Docker, Heroku). Passionate about developing clean, secure, and high-performing full stack systems.
+Backend Enginner with hands-on experience building scalable web applications across both frontend and backend. 
+Proficient in Node.js, Express, Nest Js and MongoDB, with strong expertise in API design, UI integration, and cloud deployments (AWS, Docker, Heroku). Passionate about developing clean, secure, and high-performing full stack systems.
 
 PROFESSIONAL EXPERIENCE
 Backend Developer — Divnerix Innovations (Jan 2025 – Present)
-Backend Developer (Volunteer) — ScholarGuide (Jan 2025 – Present)
-Backend Developer (Volunteer) — Ed3Hub (Dec 2024 – Present)
-Full Stack Developer — Groovinx / SkyeStudio Project (Oct 2024 – Dec 2024)
-Full Stack Developer (Intern) — In-box Elite (Aug 2023 – Dec 2024)
-Frontend Developer (Contract) — GlowUp Beauty (Mar 2023 – Jul 2025)
-Backend Development Intern — CareerEx (Jun 2024 – Dec 2024)
-Full Stack Developer (Trainee) — EdoJobs Tech Bootcamp (Jan 2023 – Dec 2023)
+Backend Developer (Volunteer) — ScholarGuide (Feb 2025 – Oct 2025)
+
+Full Stack Developer  — In-box Elite Nig Limited (Feb 2023 – Dec 2024)
+
+Full Stack Developer (Intern) — EdoJobs Tech Bootcamp (July 2022 – Dec 2022)
 
 EDUCATION
 B.Sc. Finance – University of Benin (2018)
