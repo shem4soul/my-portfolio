@@ -249,9 +249,7 @@ Available upon request.`;
                       and onboarding efficiency
                     </li>
                   </ul>
-                </li>
-                <li>
-                  <strong>Backend Developer (Volunteer)</strong> — Ed3Hub (Dec
+                  {/* <strong>Backend Developer (Volunteer)</strong> — Ed3Hub (Dec
                   2024 – Aug 2025, Remote, Nigeria)
                   <ul className="list-disc ml-6">
                     <li>
@@ -270,29 +268,21 @@ Available upon request.`;
                       Implementing NFT certification endpoints and token-based
                       gamification
                     </li>
-                  </ul>
+                  </ul> */}
                 </li>
+
                 <li>
-                  <strong>Backend Development Intern</strong> — CareerEx (Jun
-                  2024 – Dec 2024, Remote)
+                  <strong>Full Stack Developer </strong> — In-box Elite Nig Ltd
+                  (Feb 2023 – Dec 2024)
                   <ul className="list-disc ml-6">
                     <li>
-                      Developed REST APIs for fintech and e-commerce projects
+                      Designed RESTful APIs for business operations; automated
+                      internal workflows, improving efficiency by 40%
                     </li>
-                    <li>
-                      Integrated Paystack & PayPal payment gateways with
-                      multi-currency support
-                    </li>
-                    <li>
-                      Implemented error handling and validation, reducing bugs
-                      by 40%
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <strong>Backend Developer Intern</strong> — In-box Elite (Aug
-                  2023 – Dec 2024)
-                  <ul className="list-disc ml-6">
+                    Designed a custom order-tracking dashboard giving the sales
+                    team real-time visibility into order status, cutting
+                    customer inquiry response time
+                    <li></li>
                     <li>
                       Developed and maintained backend services using Node.js,
                       Express, Sequelize (MySQL)
@@ -306,26 +296,36 @@ Available upon request.`;
                       30%
                     </li>
                     <li>
-                      Automated order & stock tracking workflows, reducing
-                      manual processes by 40%
+                      Built backend services for product, order, and inventory
+                      management using TypeScript, Node.js, Express, and MySQL
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <strong>Backend Developer (Contract)</strong> — Groovinx /
-                  SkyeStudio Project (Oct 2024 – Dec 2024, Remote)
+                  <strong>Full Stack Developer (Intern)</strong> — Edo Innovate
+                  (Jul 2022 – Dec 2022, Remote)
                   <ul className="list-disc ml-6">
                     <li>
-                      Developed backend services for content scheduling, media
-                      rendering, and analytics processing
+                      Built and shipped 7+ full-stack applications end-to-end
+                      using React, TypeScript, Node.js, Express, and MongoDB,
+                      from requirements through deployment
                     </li>
                     <li>
-                      Integrated Facebook Graph API, FabricJS, and FFMPEG for
-                      automated content generation
+                      Developed and maintained REST APIs for live client-facing
+                      features, working directly with product requirements
                     </li>
                     <li>
-                      Optimized backend performance, reduced latency, and
-                      improved system responsiveness
+                      Collaborated with the engineering team in Agile sprints,
+                      participating in sprint planning, standups, and code
+                      reviews
+                    </li>
+                    <li>
+                      Deployed applications to cloud hosting platforms and
+                      managed environment configuration for production releases
+                    </li>
+                    <li>
+                      Fixed bugs and handled feature requests raised by project
+                      leads, iterating quickly on feedback{" "}
                     </li>
                   </ul>
                 </li>
