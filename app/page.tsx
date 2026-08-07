@@ -655,7 +655,7 @@ export default function Home() {
                 technologies={["Node.js", "MongoDB", "Redis", "JWT", "Express"]}
               />
 
-              <ExperienceItem
+              {/* <ExperienceItem
                 title="Backend Developer (Volunteer)"
                 company="MyEd3Hub – Web3 Learning Platform"
                 period="Dec 2024 – August 2025"
@@ -682,20 +682,22 @@ export default function Home() {
                   "Facebook Graph API",
                   "FabricJS",
                 ]}
-              />
+              /> */}
 
               <ExperienceItem
-                title="Backend Developer "
-                company="In-Box Elite"
-                period="Feb 2023 – Dec 2023"
+                title="Fullstack Developer "
+                company="In-Box Elite Nig Limited"
+                period="Feb 2023 – Dec 2024"
                 description="Built backend services for merchandising and inventory management; designed efficient models, optimized queries, and integrated secure authentication."
                 technologies={["Node.js", "Express", "MongoDB"]}
               />
               <ExperienceItem
-                title="Full Stack Developer (Bootcamp Trainee / Intern)"
+                title="Full Stack Developer ( Intern)"
                 company="EdoJobs Tech Bootcamp – Full Stack Development Track"
-                period="Mar 2022 – Dec 2022"
-                description="Built responsive web interfaces and full-stack applications; developed RESTful APIs, integrated frontend and backend services, and collaborated on real-world project clones."
+                period="July 2022 – Dec 2022"
+                description="Built and shipped 7+ full-stack applications end-to-end using React, TypeScript, Node.js, Express, and MongoDB, from requirements through deployment; Developed and maintained REST APIs for live client-facing features, working directly with product requirements; Collaborated with the engineering team in Agile sprints, participating in sprint planning, standups, and code reviews
+●
+Deployed applications to cloud hosting platforms and managed environment configuration for production releases; Fixed bugs and handled feature requests raised by project leads, iterating quickly on feedback"
                 technologies={[
                   "React.js",
                   "JavaScript",
