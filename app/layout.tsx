@@ -7,9 +7,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Emmanuel Shittu | Full Stack Developer",
+  title: "Emmanuel Shittu | Software Engineer",
   description:
-    "Full Stack Developer specializing in Node.js, Express, React.js, and MongoDB. Passionate about building secure, scalable, and high-performing web applications that deliver seamless user experiences.",
+    "Software Engineer specializing in Node.js, Express, React.js, React Native and MongoDB. Passionate about building secure, scalable, and high-performing web applications that deliver seamless user experiences.",
   generator: "Next.js",
   verification: {
     google: "google8fcb5266a476b8ec", // ✅ your actual Google verification code
